@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Idade e Gênero</title>
+</head>
+<body id="color" class="">
+    <header>
+        <h1>Idade e Gênero</h1>
+    </header>
+    <section id="corpo">
+        <div class="container">
+            
+            <!--SCRIPT IDADE-->
+            <div class="script">
+                <form action="">
+                    <!--ANO-->
+                    <div class="ano"><p>Informe o ano em que você nasceu: </p> <input type="number" class="year" placeholder="Insira aqui o ano." ></div>
+
+                    <!--GÊNERO-->
+                    <div class="sexo"><p>Informe o seu gênero: </p> 
+                    <input type="radio" id="homem" name="gender" value="Homem"><label for="homem">Homem</label>
+                    <input type="radio" id="mulher" name="gender" value="Mulher"> <label for="mulher">Mulher</label></div>
+                    
+                    
+                </form>
+                <!--ENVIAR-->
+                <button id="button" onclick="getVal()">Confirmar</button>
+                <!--RESULTADO-->
+                <div class="resultAll">
+                    <div class="result"></div>
+                    <div id='image' class=''></div>
+                </div>
+            </div>
+
+            <!--SCRIPT IDADE E GÊNERO-->
+
+            <div class="explain">
+                <h1>Para que serve isso</h1>
+                <p>Esse foi apenas um exercício de Javascript onde o objetivo era pegar o valor dos inputs e fazer com que o texto e imagem mudassem conforme a idade e gênero selecionado.</p>
+
+                <h1>Resultados</h1>
+                <p>Há 3 resultados configurados, sendo a foto masculina, feminina e um aviso.<br>
+                Se o ano for menor que 1920 ou maior que 2010, será introduzido uma mensagem de erro.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer><h4>@rafael.orige</h4></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
